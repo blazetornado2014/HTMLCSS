@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #111;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .container{
+            display: grid;
+            margin: 3em;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .grid-item{
+            background-color: burlywood;
+            font-size: 2em;
+            padding: 30px 0;
+            margin: 5px;
+        }
+
+        .grid-item:nth-child(-n+3), .grid-item:nth-last-child(3), .grid-item:nth-last-child(1){
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+        <div class="grid-item"> Apple </div>
+    </div>
+</body>
+</html>
