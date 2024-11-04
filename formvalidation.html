@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        input:invalid{
+            background: orangered;
+            color: white;
+            border-color: brown;
+        }
+
+        input:valid{
+            background: greenyellow;
+
+        }
+        .myForm{
+            display: inline-block;
+            width: 100%;
+            border: 1px solid #333;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form class="myForm">
+        <label> Employee Name </label>
+        <input type="text" placeholder="Enter your name" pattern="[A-Z][a-z]{1,40}" required>
+        </br>
+        <label> Employee Email </label>
+        <input type="email" placeholder="Enter your email" required>
+        </br>
+        <label> Mobile </label>
+        <input type="text" placeholder="Enter mobile number" pattern="[0-9]{10}" required>
+        </br>
+        <label> Employee Salary </label>
+        <input type="number" placeholder="Salary" required>
+        </br>
+    </form>
+</body>
+</html>
