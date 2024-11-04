@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: aqua;
+            text-align: center;
+        }
+        .select-menu div{
+            color: yellowgreen;
+            display: none;
+            border: 3px solid goldenrod;
+            border-radius: 15px;
+            padding: 0 5px 5px;
+        }
+        .select-menu a{
+            text-decoration: none;
+            font-size: 1.5em;
+            font-style: italic;
+            color: fuchsia;
+            padding: 10px;
+            margin: 20px 0;
+            display: inline-block; 
+        }
+
+        .select-menu div:target{
+            display: block;
+            margin-top: 0.5em;
+            padding: auto;
+            font-style: oblique;
+            font-size: 1.5em;
+            color: forestgreen;
+        }
+
+        span{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1> Website Menu </h1>
+    <div class="select-menu">
+        <a href="#html"> HTML</a>
+        <a href="#css"> CSS </a>
+        <div id="html"> 
+            <p> HTML <span> stands for Hyper Text Markup Language </span></p>
+        </div>
+        <div id="css"> 
+            <p> CSS <span> stands for Cascading Style Sheets </span></p>
+        </div>
+    </div>
+</body>
+</html>
