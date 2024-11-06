@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #111;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .overlay-gradient::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 550px;
+            height: 550px;
+            background: conic-gradient(at 50% 0%, #ff0, #080);
+            margin: 8px;
+            mix-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay-gradient">
+        <img src="Fink_Profile.png" alt = "Fink profile pic" width="550" height="550">
+    </div>
+</body>
+</html>
