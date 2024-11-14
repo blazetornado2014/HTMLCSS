@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #111;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container{
+            width: 80%;
+            height: 80%;
+        }
+
+        .ball{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: orange;
+            margin: 30px auto 0;
+            animation: ballBounce 1s infinite linear;
+        }
+
+
+        @keyframes ballBounce {
+            0%{
+                transform: translateY(0px);
+            }
+            
+            0%{
+                transform: translateY(50px);
+            }
+
+            0%{
+                transform: translateY(100px);
+            }
+
+            0%{
+                transform: translateY(150px);
+            }
+
+            0%{
+                transform: translateY(200px);
+            }
+
+            0%{
+                transform: translateY(160px);
+            }
+
+            60%{
+                transform: translateY(120px);
+            }
+
+            0%{
+                transform: translateY(80px);
+            }
+
+            0%{
+                transform: translateY(40px);
+            }
+
+            0%{
+                transform: translateY(0px);
+            }
+
+            100%{
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
